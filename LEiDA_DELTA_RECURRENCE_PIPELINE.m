@@ -5,11 +5,10 @@
 %   - Calculate the instantaneous BOLD synchronization matrix
 %   - Compute the Leading Eigenvector at each frame from all fMRI scans
 % 2 - Cluster the Leading Eigenvectors into recurrent Functional Networks
-%     using the centroids from the healthy controls data
 % 3 - Analyse the Clustering results
 %     For every fMRI scan calculate Fractional occupancy (P) and lifetimes
 %     (LT) of each state c.
-% 4 - Tests statistical significance of within subject changes in P and LT
+% 4 - Tests statistical significance of within-subject changes in P and LT
 %
 % Code from Joana Cabral March 2018
 % joana.cabral@psych.ox.ac.uk
@@ -25,7 +24,7 @@ load ts_data.mat group group_labels tcT0 tcT8
 Index_Patients = find(group==groupID);
 n_Patients = length(Index_Patients);
 
-tc=[tcT0(Index_Patients),tcT8(Index_Patients)]'; % concatenate all time series
+tc=[tcT0(Index_Patients),tcT8(Index_Patients)]'; % concatenate all timeseries
 Index_t0 = 1:n_Patients;
 Index_t8 = n_Patients+1:n_Patients*2;
 n_Scans = length(tc);% n_Scans = n_Patients * 2 scans
