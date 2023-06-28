@@ -28,7 +28,7 @@ ts_data.mat contains the timeseries for each subject and session
 
 ### Figure: Detection of recurrent phase-locking (PL) patterns in fMRI signals
 
-![Graphical summary](figure.png)
+![Graphical summary](figure.jpg)
 
 A) The fMRI signal is band-pass filtered between 0.01–0.1 Hz (blue) and Hilbert transformed into an analytic signal, whose phase can be represented over time (eiθ black arrow) and at each TR (red arrows). B) The phases in all N = 80 regions at a single TR are represented in the complex plane (right) and cortical space (left; arrows are placed at the centre of gravity of each region n; the direction and colour of the arrows indicate the sign of the corresponding element in the leading eigenvector V1(n,t) (red for positive and blue for negative). C) The PL matrix captures the phase alignment between each pair of regions. D) The leading eigenvector of the PL matrix at time t, V1(t) captures the main orientation of all phases. E) The leading eigenvectors obtained for each time point are concatenated over scans and subjects, and fed into a k-means clustering algorithm which divides the pool of data points into a predefined number of clusters k. F) Cortical representation of the PL-states (clusters). PL = phase-locking (right).
 
