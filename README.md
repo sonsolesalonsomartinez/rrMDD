@@ -20,6 +20,8 @@ Phase-locking (PL) patterns or PL states, representing recurrent patterns of fun
 
 4. Test the statistical significance of within-subject changes in P and LT during the recurrence of a depressive episode, compared to baseline remission.
 
+5. Visualize the BOLD activity in the 2 decoupled communities detected by the LEiDA patterns, and test the statistical significance between baseline and follow-up scans.
+
 
 ### Figure: Detection of recurrent phase-locking (PL) patterns in fMRI signals
 
