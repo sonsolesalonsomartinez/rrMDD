@@ -8,7 +8,8 @@
 % 3 - Analyse the Clustering results
 %     For every fMRI scan calculate Fractional occupancy (P) and lifetimes
 %     (LT) of each state c.
-% 4 - Tests statistical significance of within-subject changes in P and LT
+% 4 - Test statistical significance of within-subject changes in P and LT
+% 5 - Visualize the BOLD activity in the 2 decoupled communities of a given state.
 %
 % Code from Joana Cabral March 2018
 % joana.cabral@psych.ox.ac.uk
@@ -228,5 +229,6 @@ elseif groupID == 4
      P   P_pval  P_pval_bh P_cohenD LT LT_pval LT_pval_bh LT_cohenD
 end
 
-
+%% 5. - Visualize BOLD activity of the two decoupled communities of a given state
+% see get_phaseShift.m
 
